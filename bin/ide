@@ -1,0 +1,4 @@
+#!/bin/sh
+#vim: filetype bash
+cd $1
+screen -c ~/ruby_ide.screenrc

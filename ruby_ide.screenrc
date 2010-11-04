@@ -1,0 +1,31 @@
+source ~/.screenrc
+
+screen -t 'vim'
+stuff "vim\015"
+screen -t 'git'
+stuff "git\015"
+screen -t 'thin' 
+stuff "rackup -s thin -p 3000\015"
+screen -t 'irb' 
+stuff "irb\015"
+screen -t 'vimrc' 
+stuff "vim ~/.vimrc\015"
+screen -t 'at'
+stuff "autotest\015"
+screen -t 'src1'
+screen -t 'src2'
+
+select vim
+split -v
+focus down
+resize 40
+select thin
+split
+focus down
+resize 20
+select at
+split
+focus down
+select irb
+focus top
+
